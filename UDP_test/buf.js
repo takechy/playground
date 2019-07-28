@@ -5,10 +5,8 @@
 
 outlets = 1
 
-var buf = new Buffer("bite")
-
-
 function bang(){
+  var buf = new Buffer("bite")
   //post(buf);
   var frames = buf.framecount();
   //outlet(0, frames);

@@ -4,8 +4,8 @@
  */
 
 outlets = 1
-
-var buf = new Buffer("get_buf")
+outlets = 2
+var count = 3
 
 
 function bang(){
@@ -20,6 +20,8 @@ function bang(){
 
 
 function list(){
+  var buf = new Buffer("get_buf")
+  var frames = buf.frames;
   var samples = arrayfromargs(arguments);
   buf.poke(1, 0, samples);
   //post(samples);
